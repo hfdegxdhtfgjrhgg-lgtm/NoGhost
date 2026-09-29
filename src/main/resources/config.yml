@@ -1,0 +1,45 @@
+# =========================================================
+# NoGhost - Configuration
+# =========================================================
+
+combat:
+  enabled: true
+  high-ping-compensation: true
+  max-ping-compensation-ms: 250
+  ghost-hit-protection: true
+  duplicate-hit-protection: true
+  distance-check: true
+  hitbox-check: true
+  strict-reach-limit: true
+
+  base-reach: 3.0
+  max-reach: 4.5
+
+  ping-compensation-table:
+    - max-ping: 50
+      extra-reach: 0.0
+    - max-ping: 100
+      extra-reach: 0.3
+    - max-ping: 150
+      extra-reach: 0.6
+    - max-ping: 200
+      extra-reach: 0.9
+    - max-ping: 250
+      extra-reach: 1.2
+
+  duplicate-window-ms: 50
+  duplicate-history-size: 200
+
+  debug:
+    enabled: false
+
+messages:
+  prefix: "&8[&6NoGhost&8] &r"
+  reload-success: "&aConfiguration reloaded successfully."
+  reload-failed: "&cFailed to reload configuration."
+  no-permission: "&cYou do not have permission to use this command."
+  unknown-command: "&cUnknown subcommand. Usage: /noghost reload"
+
+logging:
+  log-rejected-hits: false
+  log-high-ping-hits: false
