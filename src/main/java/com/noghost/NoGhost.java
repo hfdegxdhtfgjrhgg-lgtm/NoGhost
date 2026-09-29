@@ -28,7 +28,7 @@ public final class NoGhost extends JavaPlugin {
             cmd.setTabCompleter(executor);
         }
 
-        getLogger().info("NoGhost v" + getPluginMeta().getVersion() + " enabled.");
+        getLogger().info("NoGhost v" + getDescription().getVersion() + " enabled.");
     }
 
     @Override
