@@ -28,12 +28,12 @@ public final class NoGhost extends JavaPlugin {
             cmd.setTabCompleter(executor);
         }
 
-        getLogger().info("NoGhost v" + getDescription().getVersion() + " enabled.");
+        getLogger().info("NoGhost has been enabled.");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("NoGhost disabled.");
+        getLogger().info("NoGhost has been disabled.");
     }
 
     public boolean reloadPluginConfig() {
